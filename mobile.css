@@ -29,6 +29,16 @@ video {
 .mask {
   -webkit-mask-image: linear-gradient(to top, transparent 5%, black 95%);
 }
+.fa-waze{
+  color: white;
+  text-align: center;
+  margin-left: 47%;
+  transform: scale(2);
+  transition-duration: 0.2s;
+}
+.fa-waze:hover{
+  transform: rotateZ(-15deg) scale(2.1);
+}
 .ribbon {
   position:relative;
   float: left;
@@ -47,6 +57,7 @@ video {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
+    transition-duration: 0.25s;
 }
 .ribbon:hover{
   transform:scale(0.43);
@@ -149,6 +160,9 @@ align-content: center ;
                    0px 8px 7px rgba(0,0,0,0.92),
                    0px 8px 1px rgba(0,0,0,0.5),
                    0px 0px 7px rgba(0,0,0,.2);
+}
+.navbar{
+    -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
 }
 .nav-item:hover{
   opacity: 0.7;
