@@ -1,4 +1,5 @@
 body{
+  zoom:60%;
   width: 100%;
   display: grid;
   grid-gap: 15px;
