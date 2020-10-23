@@ -37,7 +37,7 @@ video {
   position:absolute;
   width: 11em;
   height: 5.5em;
-  z-index: 9999;
+  z-index: 999;
   top: 15%;
   right: 2%;
   background: #2ec4b6;
@@ -55,6 +55,7 @@ video {
 }
 .ribbon:hover{
   transform:scale(1.05);
+    height: 9.5em;
 }
 .ribbon-content {
   z-index: 100;
@@ -70,6 +71,15 @@ video {
                    0px 5px 5px rgba(0,0,0,0.92),
                    0px 5px 1px rgba(0,0,0,0.5),
                    0px 0px 5px rgba(0,0,0,.2);
+}
+.ribbon-content .form-inline{
+  margin-left: 25px;
+    text-shadow: 0px 0px 0 black;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.ribbon:hover .form-inline{
+  opacity: 1;
 }
 .ribbon-content h2 {
   text-align: center;
