@@ -39,7 +39,7 @@ video {
 .ribbon {
   position:relative;
   width: 11em;
-  height: 5.5em;
+  height: 8.5em;
   z-index: 999;
   float: right;
   margin-left: 30%;
@@ -56,7 +56,6 @@ video {
 }
 .ribbon:hover{
   transform:scale(1.03);
-    height: 9.5em;
 }
 .ribbon-content {
   z-index: 100;
@@ -76,19 +75,16 @@ video {
 .ribbon-content .form-inline{
   margin-left: 25px;
     text-shadow: 0px 0px 0 black;
-    opacity: 0;
+    opacity: 1;
     transition-duration: 0.5s;
-}
-.ribbon:hover .form-inline{
-  opacity: 1;
 }
 .ribbon-content h2 {
   text-align: center;
-  font-size: 3.3em;
+  font-size: 3.1em;
 }
 .ribbon-content h3 {
   margin: 0;
-  padding: 5px 0 5px 0;
+  padding: 1px 0 3px 0;
   line-height: 16px;
   text-align: center;
 
@@ -147,12 +143,11 @@ align-content: center ;
   margin-left: auto;
 margin-right: auto;
   display: block;
-  margin-left: 65px;
 }
 .hero{
   text-align: center;
-  font-size: 65px;
-  letter-spacing: +.2em;
+  font-size: 4vw;
+  letter-spacing: +.1em;
   line-height: 1.2em;
   text-transform: uppercase;
   font-family: verdana;
@@ -258,11 +253,12 @@ margin-right: auto;
     grid-gap: 15px;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 20px;
   }
   .card{
     position: relative;
-    width: 200px;
-    height: 250px;
+    width: 260px;
+    height: 300px;
     background: #fff;
     margin: 0 auto;
     margin-bottom: 10%;
@@ -805,7 +801,6 @@ box-shadow: 0px 0px 58px -29px rgba(255,255,255,0.3);
       padding: 8px 20px;
       margin: 0px 3px 6px;
       text-align: center;
-      border: 2px solid Black;
       text-decoration: none;
       color: Black;
       white-space: nowrap;
@@ -816,7 +811,25 @@ box-shadow: 0px 0px 58px -29px rgba(255,255,255,0.3);
     border: 2px solid  black;
     box-shadow: 0px 0px 58px -29px rgba(255,255,255,0.3);
 }
-
+.hbtn-white {
+      position: relative;
+      box-sizing: border-box;
+      display: inline-block;
+      overflow: hidden;
+      padding: 8px 20px;
+      margin: 0px 3px 6px;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      white-space: nowrap;
+      z-index: 0;
+      border-radius: 107px 107px 107px 107px;
+    -moz-border-radius: 107px 107px 107px 107px;
+    -webkit-border-radius: 107px 107px 107px 107px;
+    border: 2px solid  white;
+    background: white;
+    box-shadow: 0px 0px 58px -29px rgba(255,255,255,0.3);
+}
 
 .hbtn i {
       padding-right: 8px;
