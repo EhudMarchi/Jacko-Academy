@@ -9,11 +9,14 @@ background-position: center center;
 background-repeat: no-repeat;
 background-attachment: fixed;
 }
-
+.center {
+  margin: auto;
+}
 video {
   object-fit: cover;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
   position:absolute;
   top: 0;
   left: 0;
@@ -34,16 +37,14 @@ video {
     transform: rotateZ(-15deg) scale(4.2);
 }
 .ribbon {
-  position:absolute;
+  position:relative;
   width: 11em;
   height: 5.5em;
   z-index: 999;
-  top: 15%;
-  right: 2%;
+  float: right;
+  margin-left: 30%;
   background: #2ec4b6;
   padding: 5px 0;
-  margin: top 10%;
-  z-index: 10;
   background-image: radial-gradient(circle farthest-side at top, #FFF3EB 0%, #F54039 85%);
   -webkit-box-shadow: -5px 21px 28px -4px rgba(0, 0, 0, 0.43);
   -moz-box-shadow: -5px 21px 28px -4px rgba(0, 0, 0, 0.43);
@@ -54,7 +55,7 @@ video {
   transition-duration: 0.25s;
 }
 .ribbon:hover{
-  transform:scale(1.05);
+  transform:scale(1.03);
     height: 9.5em;
 }
 .ribbon-content {
@@ -126,20 +127,10 @@ video {
   border-left: 8em solid transparent;
   z-index: 9;
 }
-@media only screen and (max-width: 320px) {
-
-   body {
-      font-size: 2em;
-   }
-}
-@media only screen and (min-width: 760px)
-.middle-container-fluid {
-    margin-left: 5em;
-    margin-right: 7em;
-}
 
 .middle-container {
-  margin: 0;
+  margin: auto;
+  justify-content:center;
 }
 .box{
   display: flex ;
@@ -153,6 +144,9 @@ align-content: center ;
   background-color: white;
 }
 #logo{
+  margin-left: auto;
+margin-right: auto;
+  display: block;
   margin-left: 65px;
 }
 .hero{
@@ -178,6 +172,7 @@ align-content: center ;
 }
 .navbar{
     -webkit-box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    width: 100%;
 }
 .nav-item:hover{
   opacity: 0.7;
@@ -257,7 +252,7 @@ align-content: center ;
 }
 
 .box{
-    width: 1000px;
+    width: 80vw;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-gap: 15px;
@@ -396,18 +391,20 @@ align-content: center ;
 border: 4px solid rgba(255,255,255,0.8);
 box-shadow: 0px 0px 58px -29px rgba(255,255,255,0.3);
   position: relative;
-  float: left;
-  display: block;
-  margin: 1%;
+  margin-top: auto;
+  display: grid;
+  margin: 2%;
   top: 0;
   overflow: hidden;
+  width: 80vw;
   min-width: 120px;
-  max-width: 480px;
+  max-width: 700px;
   max-height: 220px;
   background: #000;
   cursor: pointer;
 }
 .video-gallery .gallery-item img {
+  object-fit: cover;
   position: relative;
   display: block;
   opacity: .85;
